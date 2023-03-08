@@ -37,7 +37,7 @@ To create this application, I used:
 - And, Heroku.
 
 ## Deployed Site 🌐
-click here  --->
+click here  --->  https://text-processor.herokuapp.com/
 
 ## Credits
 
