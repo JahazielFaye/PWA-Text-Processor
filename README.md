@@ -28,5 +28,17 @@ To start the application, run the following command:
 
 **npm start**
 
+### Tools and Technologies Used
+
+To create this application, I used:
+- IndexedDB (via the idb package) as a database
+- Webpack to bundle front-end code
+- Workbox to create a service worker that caches static assets
+- And, Heroku.
+
 ## Deployed Site 🌐
 click here  --->
+
+## Credits
+
+- This is the [starter code](https://github.com/coding-boot-camp/cautious-meme) I used.
