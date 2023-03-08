@@ -32,6 +32,24 @@ export const putDb = async (content) => {
   
 
 // TODO: Add logic for a method that gets all the content from the database
-export const getDb = async () => console.error('getDb not implemented');
+//Gets all content from the database
+export const getDb = async () => {
+  console.log("GET from the database");
+//create a connection to the database and version we want to use
+  const jateDb = await openDB("jate", 1);
+//create a new transaction and specify the database and data privileges
+  const tx = jateDb.transaction("jate", readonly);
+// open up the desired object store
+  const store = tx.objectStore("jate");
+// use the .get() method to get the one text editor from the databse
+  const request = store.get(1);
+// Get confirmation of the request.
+  const result = await request;
+  //if there is a text editor entry, return it
+  result
+  ? console.log("🚀 - data retrieved from the database", result.value)
+  : console.log("🚀 - data not found in the database");
+  return result?.value;
+};
 
 initdb();
