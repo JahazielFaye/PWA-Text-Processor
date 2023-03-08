@@ -36,6 +36,8 @@ To create this application, I used:
 - Workbox to create a service worker that caches static assets
 - And, Heroku.
 
+![Screenshot of TechHub](./assets/Screenshot%202023-03-08%20184943.png)
+
 ## Deployed Site 🌐
 click here  --->  https://text-processor.herokuapp.com/
 
