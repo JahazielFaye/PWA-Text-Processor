@@ -61,7 +61,7 @@ module.exports = () => {
             // Rule to handle JS files
         {
           test: /\.m?js$/,
-          exclcude: /node_modules/,
+          exclude: /node_modules/,
           use: {
             loader: "babel-loader",  // Use the babel loader to transpile JS files
             options: {
